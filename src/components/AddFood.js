@@ -15,7 +15,7 @@ function AddFood() {
       price:price
     }
     e.preventDefault();
-    fetch("menus",{
+    fetch("https://foodies-rrestaurant-production.up.railway.app/menus",{
       method: "POST",
       headers:{
         "Content-Type": "application/json",

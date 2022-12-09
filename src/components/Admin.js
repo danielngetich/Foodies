@@ -11,7 +11,7 @@ function Admin() {
       username: username,
       password: password,
     };
-    fetch("admins", {
+    fetch("https://foodies-rrestaurant-production.up.railway.app/admins", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

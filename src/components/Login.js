@@ -8,7 +8,7 @@ function Login() {
   const navigate = useNavigate();
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("/login", {
+    fetch("https://foodies-rrestaurant-production.up.railway.app/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -13,7 +13,7 @@ function App() {
   const [menu, setMenu] = useState([]);
 
   useEffect(() => {
-    fetch("menus")
+    fetch("https://foodies-rrestaurant-production.up.railway.app/menus")
       .then((res) => res.json())
       .then((data) => setMenu(data));
   }, []);
