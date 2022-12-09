@@ -1,7 +1,7 @@
 import { useState } from "react";
 import {Link} from "react-router-dom"
 import "./AddFood.css";
-function AddFood({ menu }) {
+function AddFood() {
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
   const [description, setDescription] = useState("");
@@ -23,15 +23,15 @@ function AddFood({ menu }) {
       body:JSON.stringify(food)
     })
   }
-  function handleUpdate() {
-    fetch(`menus/${menu.id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(),
-    });
-  }
+  // function handleUpdate() {
+  //   fetch(`menus/${menu.id}`, {
+  //     method: "PATCH",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify(),
+  //   });
+  // }
   return (
     <div className="testbox">
       <form onSubmit={handleSubmit}>
