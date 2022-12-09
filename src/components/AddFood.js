@@ -15,7 +15,7 @@ function AddFood({ menu }) {
       price:price
     }
     e.preventDefault();
-    fetch("/menus",{
+    fetch("menus",{
       method: "POST",
       headers:{
         "Content-Type": "application/json",
@@ -24,7 +24,7 @@ function AddFood({ menu }) {
     })
   }
   function handleUpdate() {
-    fetch(`/menus/${menu.id}`, {
+    fetch(`menus/${menu.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

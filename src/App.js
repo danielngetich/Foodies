@@ -13,7 +13,7 @@ function App() {
   const [menu, setMenu] = useState([]);
 
   useEffect(() => {
-    fetch("menus/")
+    fetch("menus")
       .then((res) => res.json())
       .then((data) => setMenu(data));
   }, []);

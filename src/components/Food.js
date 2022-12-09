@@ -2,7 +2,7 @@ import "./Food.css";
 import React from 'react';
 function Food({ menu}) {
   function handleDelete(){
-    fetch(`/menus/${menu.id}`,{
+    fetch(`menus/${menu.id}`,{
       method: "DELETE",
     }).then(res=>res.json()).then((data)=>console.log(data))
   }
